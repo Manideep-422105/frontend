@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./NavBar";
 import Footer from "./FooterPage";
 import indiaMap from "../assests/map2.jpg";
-import front from "../assests/front.png"
+import front from "../assests/front.png";
 const ContactUs = () => {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -15,7 +15,7 @@ const ContactUs = () => {
             </p>
           </div>
           <h2 className="text-3xl font-bold">Contact Us</h2>
-          <h1 className="absolute top-1/2 transform -translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
+          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
             CONTACT US
           </h1>
         </div>
@@ -24,19 +24,21 @@ const ContactUs = () => {
       {/* <div className="px-4 py-8 md:px-12 md:py-16 text-4xl md:text-6xl font-bold text-center">
         Contact Us
       </div> */}
-      <div className="relative flex px-[215px] py-8 bg-[#FFF225]">
+      <div className="relative flex justify-center items-center md:px-[215px] md:py-8 py-4 bg-[#FFF225]">
         <img
           src={indiaMap}
           alt="India Map"
-          className="w-full max-w-2xl"
+          className="w-full max-w-[90%] md:block hidden"
           style={{ left: "5%" }}
         />
-        <img src={front} alt="bike" style={{right:"5%"}} className="px-4"/>
+        <img
+          src={front}
+          alt="bike"
+          style={{ right: "5%" }}
+          className="px-4 md:block hidden"
+        />
 
-        <div
-          className="absolute bg-white p-4 shadow-lg rounded-lg"
-          style={{ top: "27%", left: "4%", width: "250px" }}
-        >
+        <div className="md:absolute relative bg-white p-4 shadow-lg rounded-lg md:w-[250px] w-[90%] md:top-[27%] md:left-[4%]">
           <div className="flex items-center mb-2">
             <img
               src="https://flagcdn.com/in.svg"

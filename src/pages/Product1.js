@@ -12,7 +12,7 @@ const Product1 = () => {
           <div className="text-center relative z-10">
             <img src={bikeImage} alt="RV400" className="mx-auto animate-zoomIn" />
           </div>
-          <div className="absolute top-12 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-white text-[100px] font-bold z-0 opacity-170 text-shadow animate-zoomIn">
+          <div className="absolute md:block hidden top-12 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-white text-[100px] font-bold z-0 opacity-170 text-shadow animate-zoomIn">
             SE03 LITE
           </div>
         </div>

@@ -6,18 +6,24 @@ import Footer from "./FooterPage.js";
 const Product1 = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="min-h-screen flex flex-col md:flex-row">
         <div className="md:w-1/2 bg-[#F9ED32] flex items-center justify-center p-8 relative animate-zoomIn">
           <div className="text-center relative z-10">
-            <img src={bikeImage} alt="RV400" className="mx-auto animate-zoomIn" />
+            <img
+              src={bikeImage}
+              alt="RV400"
+              className="mx-auto animate-zoomIn"
+            />
           </div>
-          <div className="absolute top-12 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-white text-[100px] font-bold z-0 opacity-170 text-shadow animate-zoomIn">
+          <div className="md:block hidden absolute top-12 left-1/3 transform -translate-x-1/2 -translate-y-1/2 text-white text-[100px] font-bold z-0 opacity-170 text-shadow animate-zoomIn">
             SE03 MAX
           </div>
         </div>
         <div className="md:w-1/2 bg-black p-8 animate-zoomIn">
-          <h className="text-white text-[50px] animate-zoomIn">Rhyno SE03 MAX</h>
+          <h className="text-white text-[50px] animate-zoomIn">
+            Rhyno SE03 MAX
+          </h>
           <br />
           <br />
           <p className="text-white text-[20px] animate-zoomIn">

@@ -18,17 +18,17 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex flex-row items-center justify-between px-20 bg-[#373737]">
-      <div className="px-8">
-        <img src={logoImage} alt="Logo" className="w-52 h-auto" />
+    <div className="flex h-[60px] md:h-auto md:py-5 flex-row items-center justify-between md:px-20 px-[10px] bg-[#373737] w-[100%]">
+      <div className="md:px-8 md:w-[20%] w-0 overflow-hidden">
+        <img src={logoImage} alt="Logo" className="md:w-52 w-full h-auto" />
       </div>
-      <div>
+      <div className="md:w-[80%] w-[100%]">
         <nav>
-          <ul className="flex flex-row space-x-6 relative">
+          <ul className="flex flex-row md:space-x-6 space-x-3 relative">
             <li>
               <NavLink
                 to="/"
-                className="text-2xl text-white hover:text-yellow-500"
+                className="md:text-2xl text-[0.6rem] text-white hover:text-yellow-500"
               >
                 Home
               </NavLink>
@@ -40,13 +40,13 @@ const NavBar = () => {
             >
               <NavLink
                 to="#"
-                className="text-2xl text-white hover:text-yellow-500"
+                className="md:text-2xl text-[0.6rem] text-white hover:text-yellow-500"
               >
                 Products
               </NavLink>
               {isProductsMenuOpen && (
                 <ul
-                  className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg z-10"
+                  className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg z-[1000]"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -88,7 +88,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/about"
-                className="text-2xl text-white hover:text-yellow-500"
+                className="md:text-2xl text-[0.6rem] text-white hover:text-yellow-500"
               >
                 About Us
               </NavLink>
@@ -96,7 +96,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/contact"
-                className="text-2xl text-white hover:text-yellow-500"
+                className="md:text-2xl text-[0.6rem] text-white hover:text-yellow-500"
               >
                 Contact Us
               </NavLink>
@@ -104,7 +104,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/prebook"
-                className="text-2xl text-white hover:text-yellow-500"
+                className="md:text-2xl text-[0.6rem] text-white hover:text-yellow-500"
               >
                 Pre-book now
               </NavLink>

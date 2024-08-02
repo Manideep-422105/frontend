@@ -32,8 +32,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  
-
   const Checkout1 = () => {
     navigate("/product1");
   };
@@ -52,17 +50,19 @@ const Home = () => {
   const [ref3, inView3] = useInView({ triggerOnce: true });
 
   return (
-    <div className="bg-black">
-      <NavBar />
+    <div className="bg-black w-[100vw]">
+      <div className="max-w-[100%]">
+        <NavBar />
+      </div>
       <p className="text-[4.5vw] text-center font-bold text-white animate-zoomIn">
         “Let's Elevate Your Ride Experience With Rhyno
       </p>
-      <p className="text-[4.5rem] px-[125px] font-bold text-white animate-zoomIn">
+      <div className="w-[100%] md:text-center text-left md:text-[4.5rem] text-[40px] md:px-[125px] px-[10px] font-bold text-white animate-zoomIn">
         Where Superiority Meets{" "}
-        <span className="inline-block w-[7rem] text-center font-bold text-yellow-300">
+        <span className="inline-block md:w-[7rem] text-center font-bold text-yellow-300">
           {words[currentWordIndex]}
         </span>
-      </p>
+      </div>
 
       <div className="bg-[#F9ED32]">
         <img src={group} alt="grp" />
@@ -210,39 +210,35 @@ const Home = () => {
         <img src={full} alt="full"></img>
       </div> */}
 
-      <div className="pt-[20px]">
-        <div className="flex flex-row">
+      <div className="max-w-[100vw] pt-[20px]">
+        <div className="flex md:flex-row flex-col gap-10">
           <div className="flex-1 bg-black py-8">
             <h1 className="text-white text-4xl md:text-5xl text-center">
               REASONS TO CHOOSE RHYNO
             </h1>
-            <div className="flex flex-col">
-              <div className="pt-[18px] flex flex-row px-[75px]">
-                <img
-                  src={sturdy}
-                  alt="sturdy"
-                  className="w-32 h-32 md:w-[300px] md:h-[300px]"
-                ></img>
-                <img
-                  src={battery}
-                  alt="battery"
-                  className="w-32 h-32 md:w-[300px] md:h-[300px]"
-                ></img>
-              </div>
-              <div className="px-[240px]">
-                <img
-                  src={tech}
-                  alt="tech"
-                  className="w-32 h-32 md:w-[300px] md:h-[300px]"
-                ></img>
-              </div>
+            <div className="flex w-full justify-center items-center gap-5 flex-wrap pt-[1rem] flex-col">
+              <img
+                src={sturdy}
+                alt="sturdy"
+                className="w-32 h-32 md:w-[300px] md:h-[300px]"
+              ></img>
+              <img
+                src={battery}
+                alt="battery"
+                className="w-32 h-32 md:w-[300px] md:h-[300px]"
+              ></img>
+              <img
+                src={tech}
+                alt="tech"
+                className="w-32 h-32 md:w-[300px] md:h-[300px]"
+              ></img>
             </div>
           </div>
           <div className="flex-1 bg-[#F9ED32] flex justify-center items-center pt-[20px] pb-[20px]">
             <img
               src={full}
               alt="full"
-              className="w-62 h-62 md:w-[600px] md:h-[600px]"
+              className="w-[90%] h-auto md:w-[600px] md:h-[600px]"
             />
           </div>
         </div>
@@ -253,16 +249,13 @@ const Home = () => {
       </div>
 
       <div className="pt-[30px] " ref={ref3}>
-        <div className="relative bg-[#F9ED32] text-white flex items-center justify-center">
-          {/* <div className="absolute inset-0 z-0 flex items-center justify-center opacity-10 right-12 top-11">
-          <h1 className="text-[180px] font-bold">Pre-book</h1>
-        </div> */}
-          <div className="container mx-auto flex items-center justify-between relative z-10">
+        <div className="relative bg-[#F9ED32] pb-[30px] text-white flex items-center justify-center">
+          <div className="container mx-auto flex md:flex-row flex-col md:gap-0 gap-4 items-center justify-between w-[95%] relative z-10">
             <div className="flex-1">
               <img src={grp} alt="Bikes" className="w-full h-auto" />
             </div>
-            <div className="flex-1 text-right">
-              <h2 className="text-6xl font-bold mb-4 text-black">
+            <div className="flex-1 md:text-right text-center">
+              <h2 className="md:text-6xl text-5xl font-bold mb-4 text-black">
                 Pre-booking
               </h2>
               <p className="text-lg mb-4 text-black">
@@ -283,7 +276,7 @@ const Home = () => {
       <div className="pt-[40px]">
         <div className="flex-grow bg-[#2C2A2A] text-white py-12">
           <h2 className="text-center text-4xl mb-12">Pick your quick</h2>
-          <div className="flex justify-center space-x-8">
+          <div className="flex md:flex-row flex-col items-center gap-8 justify-center">
             <ProductCard
               imageSrc={model2}
               title="SE03 LITE"
@@ -307,34 +300,34 @@ const Home = () => {
       </div>
 
       <div className="flex-grow bg-[#F9ED32] text-white py-12">
-        <div className="container mx-auto flex items-center">
-          <div className="w-1/4 p-4">
+        <div className="container mx-auto flex md:flex-row flex-col gap-8 items-center">
+          <div className="md:w-1/4 w-full p-4">
             <h2 className="text-4xl font-bold mb-4">Insights about Rhyno</h2>
             <p className="text-lg">
               Some insightful text about Rhyno products goes here. It can be a
               description or any other relevant information.
             </p>
           </div>
-          <div className="w-3/4 flex space-x-4">
+          <div className="md:w-3/4 w-full flex md:flex-row flex-col justify-center items-center gap-4">
             <img
               src={charge}
               alt="Bike 1"
-              className="w-1/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
+              className="md:w-1/4 w-3/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
             />
             <img
               src={theft}
               alt="Bike 2"
-              className="w-1/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
+              className="md:w-1/4 w-3/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
             />
             <img
               src={motor}
               alt="Bike 3"
-              className="w-1/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
+              className="md:w-1/4 w-3/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
             />
             <img
               src={color}
               alt="Bike 4"
-              className="w-1/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
+              className="md:w-1/4 w-3/4 object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
             />
           </div>
         </div>
