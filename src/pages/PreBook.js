@@ -13,7 +13,7 @@ const PreBook = () => {
             </p>
           </div>
           <h2 className="text-3xl font-bold">Prebook now</h2>
-          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
+          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0 hidden md:block">
             PREBOOK-NOW
           </h1>
         </div>
@@ -25,12 +25,7 @@ const PreBook = () => {
             <label className="block text-sm font-medium mb-2">
               Select Rhyno Model*
             </label>
-            {/* <input
-            type="text"
-            className="border border-gray-300 p-2 w-full rounded"
-            placeholder="Select Model"
-            disabled
-          /> */}
+
             <select className="border border-gray-300 p-2 w-full rounded">
               <option>Select Model</option>
               <option>SE03 LITE</option>

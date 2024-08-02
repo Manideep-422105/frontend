@@ -21,7 +21,7 @@ const AboutUs = () => {
             <p className="text-sm font-light ml-2">Home Page -&gt; About Us</p>
           </div>
           <h2 className="text-3xl font-bold">About Us</h2>
-          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
+          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0 hidden md:block">
             ABOUT US
           </h1>
         </div>
