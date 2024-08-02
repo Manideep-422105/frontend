@@ -25,7 +25,8 @@ const ComparisonPage = () => {
           <div className="flex flex-col md:flex-row justify-evenly items-center mb-12">
             <div className="w-full md:w-[240px] p-4 text-center md:text-left">
               <h2 className="text-[18px] md:text-[20px] mb-4">
-                To access all the amazing features that come with your Rhyno Scooter
+                To access all the amazing features that come with your Rhyno
+                Scooter
               </h2>
             </div>
             <div className="w-full md:w-2/3 flex flex-col md:flex-row justify-between items-center">
@@ -36,7 +37,9 @@ const ComparisonPage = () => {
                   className="bg-[#F9ED32] w-[250px] md:w-[350px] object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
                   onClick={Checkout1}
                 />
-                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">SE03 LITE</h3>
+                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">
+                  SE03 LITE
+                </h3>
               </div>
               <div className="flex flex-col items-center relative px-[20px] mb-6 md:mb-0">
                 <img
@@ -45,30 +48,40 @@ const ComparisonPage = () => {
                   className=" bg-[#424242] w-[250px] md:w-[350px] object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
                   onClick={Checkout2}
                 />
-                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">SE03</h3>
+                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">
+                  SE03
+                </h3>
               </div>
-              <div className="flex flex-col items-center relative">
+              <div className="flex flex-col items-center relative px-[20px] mb-6 md:mb-0">
                 <img
                   src={product1}
                   alt="Bike 3"
                   className="bg-[#F9ED32] w-[250px] md:w-[350px] object-cover transform transition duration-500 hover:scale-105 hover:shadow-lg"
                   onClick={Checkout3}
                 />
-                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">SE03 MAX</h3>
+                <h3 className="text-[20px] md:text-[25px] font-bold mt-4">
+                  SE03 MAX
+                </h3>
               </div>
             </div>
           </div>
-          <div className="bg-white py-4">
-            <div className="container mx-auto px-4">
+          <div className="bg-white py-4 overflow-x-auto">
+            <div className="container mx-auto px-4 max-h-[500px] overflow-y-auto">
               <table className="w-full table-auto text-sm md:text-base">
                 <thead>
                   <tr>
                     <th className="py-2 text-center text-[20px] md:text-[30px]">
                       Specification
                     </th>
-                    <th className="py-2 text-center text-[20px] md:text-[30px]">SE03 LITE</th>
-                    <th className="py-2 text-center text-[20px] md:text-[30px]">SE03</th>
-                    <th className="py-2 text-center text-[20px] md:text-[30px]">SE03 MAX</th>
+                    <th className="py-2 text-center text-[15px] md:text-[30px]">
+                      SE03 LITE
+                    </th>
+                    <th className="py-2 text-center text-[15px] md:text-[30px]">
+                      SE03
+                    </th>
+                    <th className="py-2 text-center text-[15px] md:text-[30px]">
+                      SE03 MAX
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -89,13 +102,22 @@ const ComparisonPage = () => {
                       Battery Features
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      LFP with 1500 cycles, <br />Active Balancing, <br />Waterproof (IP67)
+                      LFP with 1500 cycles, <br />
+                      Active Balancing, <br />
+                      Waterproof (IP67)
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      LFP with 1500 cycles, <br />Active Balancing,<br />Waterproof (IP67)
+                      LFP with 1500 cycles, <br />
+                      Active Balancing,
+                      <br />
+                      Waterproof (IP67)
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      LFP with 1500 cycles,<br />Active Balancing,<br />Waterproof (IP67)
+                      LFP with 1500 cycles,
+                      <br />
+                      Active Balancing,
+                      <br />
+                      Waterproof (IP67)
                     </td>
                   </tr>
                   <tr className="bg-[#F9ED32]">
@@ -113,7 +135,9 @@ const ComparisonPage = () => {
                     </td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="py-2 px-2 md:px-4 font-semibold">Charging Time</td>
+                    <td className="py-2 px-2 md:px-4 font-semibold">
+                      Charging Time
+                    </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
                       3 hours (12A)
                     </td>
@@ -137,7 +161,9 @@ const ComparisonPage = () => {
                     </td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="py-2 px-2 md:px-4 font-semibold">Max Speed</td>
+                    <td className="py-2 px-2 md:px-4 font-semibold">
+                      Max Speed
+                    </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
                       55 km/h
                     </td>
@@ -209,13 +235,31 @@ const ComparisonPage = () => {
                       Other key benefits
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      Fire-safe Battery<br />Range prediction<br />Comfortable ride<br />Stable and safe
+                      Fire-safe Battery
+                      <br />
+                      Range prediction
+                      <br />
+                      Comfortable ride
+                      <br />
+                      Stable and safe
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      Fire-safe Battery<br />Range prediction<br />Comfortable ride<br />Stable and safe
+                      Fire-safe Battery
+                      <br />
+                      Range prediction
+                      <br />
+                      Comfortable ride
+                      <br />
+                      Stable and safe
                     </td>
                     <td className="py-2 px-2 md:px-4 text-center font-semibold">
-                      Fire-safe Battery<br />Range prediction<br />Comfortable ride<br />Stable and safe
+                      Fire-safe Battery
+                      <br />
+                      Range prediction
+                      <br />
+                      Comfortable ride
+                      <br />
+                      Stable and safe
                     </td>
                   </tr>
                   <tr className="bg-white">
