@@ -13,7 +13,7 @@ const PreBook = () => {
             </p>
           </div>
           <h2 className="text-3xl font-bold">Prebook now</h2>
-          <h1 className="absolute top-1/2 transform md:-translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
+          <h1 className="absolute top-1/2 transform -translate-y-1/2 right-9 text-[100px] font-bold text-white opacity-10 z-0">
             PREBOOK-NOW
           </h1>
         </div>
